@@ -8,20 +8,26 @@ import com.github.eprendre.statelayout.StateLayout
  * Created by eprendre on 13/01/2018.
  */
 class CustomStateLayout(context: Context, attrs: AttributeSet) : StateLayout(context, attrs) {
-  override fun getErrorRes(): Int {
-    return R.layout.state_my_error
+
+  override fun getStateLayouts(): List<Int> {
+    return listOf(
+        R.layout.state_my_error,
+        R.layout.state_my_empty,
+        R.layout.state_my_loading,
+        R.layout.state_custom_one,
+        R.layout.state_custom_two)
   }
 
-  override fun getEmptyRes(): Int {
-    return R.layout.state_my_empty
+  fun showError() {
+    displayedChildId = R.id.state_my_error
   }
 
-  override fun getLoadingRes(): Int {
-    return R.layout.state_my_loading
+  fun showEmpty() {
+    displayedChildId = R.id.state_my_empty
   }
 
-  override fun getCustomResList(): List<Int> {
-    return listOf(R.layout.state_custom_one, R.layout.state_custom_two)
+  fun showLoading() {
+    displayedChildId = R.id.state_my_loading
   }
 
   fun showCustomOne() {
@@ -31,4 +37,5 @@ class CustomStateLayout(context: Context, attrs: AttributeSet) : StateLayout(con
   fun showCustomTwo() {
     displayedChildId = R.id.state_custom2 //id from R.layout.state_custom_two
   }
+
 }
