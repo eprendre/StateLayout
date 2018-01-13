@@ -1,0 +1,4 @@
+<resources>
+    <string name="empty_text">There are no items.</string>
+    <string name="error_text">An error occurred, please try again later.</string>
+</resources>
