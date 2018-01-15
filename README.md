@@ -27,7 +27,5 @@ dependencies {
 
 1. Extends `StateLayout`.
 1. Make sure each layout returned by `getStateLayouts` has an id.
-1. Change layout by assigning `displayedChildId` with previously defined id. `R.id.state_content` is reserved for 
-content.
-1. Add features as you need. See example [CustomStateLayout](https://github
-.com/eprendre/StateLayout/blob/master/app/src/main/java/com/github/eprendre/statelayout/demo/CustomStateLayout.kt), [SimpleStateLayout](https://github.com/eprendre/StateLayout/blob/master/library/src/main/java/com/github/eprendre/statelayout/SimpleStateLayout.kt).
+1. Change layout by assigning `displayedChildId` with previously defined id. `R.id.state_content` is reserved for content.
+1. Add features as you need. See example [CustomStateLayout](https://github.com/eprendre/StateLayout/blob/master/app/src/main/java/com/github/eprendre/statelayout/demo/CustomStateLayout.kt), [SimpleStateLayout](https://github.com/eprendre/StateLayout/blob/master/library/src/main/java/com/github/eprendre/statelayout/SimpleStateLayout.kt).
