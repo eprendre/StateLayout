@@ -20,7 +20,7 @@ abstract class StateLayout(context: Context, attrs: AttributeSet) : ViewAnimator
   }
 
   /**
-   * 提供各个状态的 layout，需要在每个布局根部加上 id 用于后续的切换。
+   * provide layouts for each state, with id in each root layout.
    */
   abstract fun getStateLayouts(): List<Int>
 
@@ -41,7 +41,7 @@ abstract class StateLayout(context: Context, attrs: AttributeSet) : ViewAnimator
   }
 
   /**
-   * 切换布局
+   * switch layout
    */
   var displayedChildId: Int
     get() = getChildAt(displayedChild).id
