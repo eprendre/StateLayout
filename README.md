@@ -19,7 +19,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.eprendre:StateLayout:v0.1'
+    implementation 'com.github.eprendre:StateLayout:v0.2'
 }
 ```
 
